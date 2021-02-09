@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev.Finances</title>
+
+  <link rel="stylesheet" href="assets/styles/main.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">dev.Finance$</h1>
+      <div class="header-cards">
+        <div class="header-cards__item">
+          <div class="d-flex-collum">
+            <span class="title">Entradas</span>
+            <span class="amount">R$ 200</span>
+          </div>
+          <span class="icon success">
+            <i class="fas fa-arrow-circle-up"></i>
+          </span>
+        </div>
+        <div class="header-cards__item">
+          <div class="d-flex-collum">
+            <span class="title">Saídas</span>
+            <span class="amount">- R$ 200</span>
+          </div>
+          <span class="icon danger">
+            <i class="fas fa-arrow-circle-down"></i>
+          </span>
+        </div>
+        <div class="header-cards__item">
+          <div class="d-flex-collum">
+            <span class="title">Total</span>
+            <span class="amount">R$ 200</span>
+          </div>
+          <span class="icon">
+            <i class="fas fa-dollar-sign"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="new-trans success">
+        <span class="icon">
+          <i class="fas fa-plus"></i>
+        </span>
+        <p>Nova transação</p>
+      </div>
+
+      <div class="table">
+        <table cellspacing="0">
+          <thead>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Parcela Playstation</td>
+              <td>245,22</td>
+              <td>07/02/2021</td>
+              <td>
+                <span class="icon">
+                  <i class="fas fa-minus-circle"></i>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/cca9266622.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background: #ededed;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.success {
+  color: #28bf64;
+}
+
+.danger {
+  color: crimson;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+.d-flex-collum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  background-color: #0d4022;
+  text-align: center;
+  padding: 2rem 0.5rem 0;
+  height: 175px;
+}
+
+.header .header__title {
+  color: #fff;
+}
+
+.header .header-cards {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .header .header-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.header .header-cards .header-cards__item {
+  background-color: #fff;
+  width: 450px;
+  height: 65px;
+  padding: 1.85rem;
+  border-radius: 0.2rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.header .header-cards .header-cards__item:last-child {
+  background-color: #28bf64 !important;
+  color: #fff;
+}
+
+.header .header-cards .header-cards__item:last-child .title {
+  font-weight: 700 !important;
+}
+
+.header .header-cards .header-cards__item .title {
+  font-size: 1.23rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header .header-cards .header-cards__item .amount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+
+.header .header-cards .header-cards__item .icon {
+  font-size: 2em;
+}
+
+main {
+  padding: 6rem 1rem;
+}
+
+main .new-trans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 1.45rem;
+}
+
+main .new-trans:hover {
+  cursor: pointer;
+}
+
+main .table table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+}
+
+main .table table thead {
+  text-align: left;
+}
+
+main .table tr {
+  background-color: #fff;
+  border-radius: 0 0.2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main .table tr .icon {
+  font-size: 1.5em;
+  color: crimson;
+}
+
+main .table tr .icon:hover {
+  cursor: pointer;
+}
+
+main .table th,
+main .table td {
+  padding: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

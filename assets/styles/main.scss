@@ -1,0 +1,110 @@
+@import "./reset";
+@import "./theme";
+@import "./utilities";
+
+.header {
+  background-color: #0d4022;
+  text-align: center;
+  padding: 2rem 0.5rem 0;
+  height: 175px;
+
+  .header__title {
+    color: $white;
+  }
+
+  .header-cards {
+    margin-top: 4rem;
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 15px;
+
+    @media screen and (max-width: 768px){
+      flex-wrap: wrap;
+    }
+
+    .header-cards__item {
+      background-color: $white;
+      width: 450px;
+      height: 65px;
+      padding: 1.85rem;
+      border-radius: 0.2rem;
+      text-align: left;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+
+      &:last-child {
+        background-color: $primary !important;
+        color: $white;
+
+        .title {
+          font-weight: 700 !important;
+        }
+      }
+
+      .title {
+        font-size: 1.23rem;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .amount {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 1.2rem;
+      }
+
+      .icon {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+main {
+  padding: 6rem 1rem;
+
+  .new-trans {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 1.45rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .table {
+    table {
+      width: 100%;
+      border-spacing: 0 0.5rem;
+
+      thead {
+        text-align: left;
+      }
+    }
+
+    tr {
+      background-color: $white;
+      border-radius: .0.2rem;
+      color: rgba(0, 0, 0, 0.6);
+
+      .icon {
+        font-size: 1.5em;
+        color: crimson;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    th,
+    td {
+      padding: 2rem;
+    }
+  }
+}
