@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev.Finances</title>
 
-  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="public/assets/styles/main.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="public/js/index.js" defer></script>
 </head>
 
 <body>
-  <header class="header">
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="header">
+        <h4>Nova Transação</h4>
+      </div>
+      <div class="body">
+        <form id="modal-form">
+          <input type="text" name="description" placeholder="Descrição">
+          <input type="number" name="amount" placeholder="0,00">
+          <span>Use o sinal - (negativo) para despesas e, (vírgula) para casas decimais</span>
+          <input type="date" name="date" placeholder="dd/MM/yyyy">
+        </form>
+      </div>
+      <div class="footer">
+        <button class="btn btn-outline-danger" id="modal-cancel-btn">
+          Cancelar
+        </button>
+        <button class="btn btn-success" id="modal-save-btn">
+          Salvar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header>
     <div class="container">
       <h1 class="header__title">dev.Finance$</h1>
-      <div class="header-cards">
-        <div class="header-cards__item">
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-cards">
+        <div class="main-cards__item">
           <div class="d-flex-collum">
             <span class="title">Entradas</span>
             <span class="amount">R$ 200</span>
@@ -26,7 +57,7 @@
             <i class="fas fa-arrow-circle-up"></i>
           </span>
         </div>
-        <div class="header-cards__item">
+        <div class="main-cards__item">
           <div class="d-flex-collum">
             <span class="title">Saídas</span>
             <span class="amount">- R$ 200</span>
@@ -35,7 +66,7 @@
             <i class="fas fa-arrow-circle-down"></i>
           </span>
         </div>
-        <div class="header-cards__item">
+        <div class="main-cards__item">
           <div class="d-flex-collum">
             <span class="title">Total</span>
             <span class="amount">R$ 200</span>
@@ -45,12 +76,8 @@
           </span>
         </div>
       </div>
-    </div>
-  </header>
 
-  <main>
-    <div class="container">
-      <div class="new-trans success">
+      <div class="new-trans success" id="newTransaction">
         <span class="icon">
           <i class="fas fa-plus"></i>
         </span>
@@ -66,16 +93,6 @@
             <th></th>
           </thead>
           <tbody>
-            <tr>
-              <td>Parcela Playstation</td>
-              <td>245,22</td>
-              <td>07/02/2021</td>
-              <td>
-                <span class="icon">
-                  <i class="fas fa-minus-circle"></i>
-                </span>
-              </td>
-            </tr>
           </tbody>
         </table>
       </div>

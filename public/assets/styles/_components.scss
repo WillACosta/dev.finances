@@ -1,0 +1,31 @@
+.btn {
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-success {
+  background-color: $primary;
+  color: $white;
+  font-weight: 700;
+
+  &:hover{
+    background-color: darken($color: $primary , $amount: 6);
+  }
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $white;
+  font-weight: 700;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  border: 2px solid $danger;
+  color: $danger;
+}

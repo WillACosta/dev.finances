@@ -1,0 +1,36 @@
+$white: #fff;
+$white-s: #ededed;
+$black: #111;
+$gray: #747474;
+
+$black-a: rgba(0, 0, 0, 0.6);
+
+$primary: #28bf64;
+$secondary: #0d4022;
+$danger: #DC143C;
+
+$maxWidth: 980px;
+
+body {
+  background: $white-s;
+}
+
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.success {
+  color: $primary;
+}
+
+.danger {
+  color: $danger;
+}
+
+/* Color Theme Swatches in Hex */
+$Light-Money-1-hex: #35FF86;
+$Light-Money-2-hex: #28BF64;
+$Light-Money-3-hex: #1B7F43;
+$Light-Money-4-hex: #0D4022;
+$Light-Money-5-hex: #30E578;
